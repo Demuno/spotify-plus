@@ -25,8 +25,9 @@ export function LoginPage() {
                 {" "}
                 Aproveite 1 mês grátis
               </Marquee>
+              
 
-              <Link to="/home">
+              <Link className="button-index" to="/home">
                 <button className="btn-primary">Ouvir agora</button>
               </Link>
             </div>

@@ -1,4 +1,5 @@
 
+
 .login-wrapper {
   display: flex;
 }
@@ -10,7 +11,7 @@
   background-repeat: no-repeat;
   background-position: -35px -44px;
   background-size: 100% 710px;
-  margin-right: 3rem;
+  margin-right: center;
   
   
     
@@ -25,14 +26,16 @@ h2 {
 }
 
 main {
-  height: 90vh;
+  
   display: flex;
   align-items: center;
+  
   
 }
 
 .showcase-container {
   width: 100%;
+  overflow: hidden;
   
 }
 
@@ -57,27 +60,30 @@ main {
 
 Showcase
 #showcase {
-  height: 100vh;
+  height: 10%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background: url("../../assets/showcase.webp") center center/cover;
-  
-  
-
+ 
+ 
+  background-blend-mode: color; 
 }
 
 .showcase-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 5rem;
+  margin-right: 17Srem;
+  
+  
 }
 
 #showcase .showcase-container p {
   margin: 15px 0;
   font-size: 2.1rem;
   align-items: right;
+  
 }
 
 .btn-primary {
@@ -102,5 +108,43 @@ Showcase
     gap: 3rem;
     margin: 5rem auto;
   }
+  
+  /* .showcase-container {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url("../../assets/showcase.webp") center center/cover;
+    background-blend-mode: color;
+  } */
 }
+  @media(max-width: 700px){
+    .hero-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: -10rem auto;
+    margin-left: 4rem;    
+    }
+   
+  }
+  @media(max-width:700px){
+    .button.btn-primary {
+      justify-content: center;
+      gap: 3rem;
+      margin: 17rem auto;
+      height: 5%;
+    }
+  }
+  @media(max-width: 700px){
+    main{
+      height: 10rem;
+    }
+  }
+  
+  
+  
+  
+  
+
  
