@@ -1,13 +1,19 @@
+import React from "react";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
-import { Player } from "../Player/Player";
+
+import { LoadingSpinner } from "../LoadingSpinner";
 
 import Logo from "../../assets/logoS.png";
 
+import { Player } from "../Player/Player";
+
 import "./styles.css";
+
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { LoadingSpinner } from "../LoadingSpinner";
+
 
 
 type Song = {
@@ -39,8 +45,8 @@ type Playlist = {
   name: string;
   images: Image[];
 };
-  
-export function HomePage() {
+
+export function HomePage(): JSX.Element {
   const [featuredPlaylists, setFeaturedPlaylists] = useState<Playlist[]>([]);
   const [recommendedSongs, setRecommendedSongs] = useState<Song[]>();
   const [genres, setGenres] = useState([]);
@@ -114,9 +120,8 @@ export function HomePage() {
         <nav className="menu-lateral">
           <ul className="navbar">
             <li className="menu">
-              <Link to="/">
-                Inicio</Link>
-            </li>   
+              <Link to="/">Inicio</Link>
+            </li>
             <li className="menu">
               <a href="#browser">Buscar</a>
             </li>
@@ -131,8 +136,7 @@ export function HomePage() {
             <li className="second-menu">
               <a href="#">Músicas mais curtidas</a>
             </li>
-            <li className="second-menu">
-            </li>
+            <li className="second-menu"></li>
           </ul>
         </nav>
       </header>

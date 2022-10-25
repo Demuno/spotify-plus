@@ -6,7 +6,7 @@
 }
 
 .sidebar-container {
-  height: 100vh;
+  height: auto;
   width: 15vw;
   z-index: 10;
   display: flex;
@@ -42,7 +42,6 @@ fieldset {
 .menu-lateral ul {
   list-style: none;
 }
-
 .menu {
   font-size: 15px;
   margin-top: 1rem;
@@ -58,6 +57,7 @@ fieldset {
 }
 
 .main-container {
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -204,34 +204,60 @@ a:hover {
   }
 
 }
-
 @media (max-width: 770px) {
   section {
     justify-content: center;
     gap: 3rem;
     margin: 5rem auto;
   }
-  .home-title {
-    font-size: 15px;
+  fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .home-logo {
+  /* .home-title {
+    font-size: 15px;
+  } */
+  /* .home-logo {
     width: 20px;
     height: 20px;
     margin-right: 1rem;
-  }
+  } */
   .home-wrapper {
     display: block;
   }
   .sidebar-container {
-    
-    height: 15vh;
+    height: 10rem;
     width: 100vw;
     z-index: 10;
-    display: flex;
-    /* flex-direction: row;   */
-    justify-content: flex-start;
 
     border-right: 1px solid gray;
+    }
+    .menu-lateral {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .navbar {
+      height: 3.5rem;
+      display: flex;
+      gap: 1rem;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 2px;
+    }
+    .navbar-list {
+      height: 3.5rem;
+      display: flex;
+      gap: 1rem;
+      border: 1px solid gray;
+      border-radius: 20px;
+      padding: 2px;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
     }
     
     
@@ -242,48 +268,11 @@ a:hover {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 300px) {
-  section {
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-  }
-  .home-title {
-    font-size: 15px;
-  }
-  .home-logo {
-    width: 20px;
-    height: 20px;
-    margin-right: 1rem;
-  }
-  .home-wrapper {
-    display: block;
-  }
-  .sidebar-container {
-    
-    height: 15vh;
-    width: 100vw;
-    z-index: 10;
-    display: flex;
-    /* flex-direction: row;   */
-    justify-content: flex-start;
-
-    border-right: 1px solid gray;
-    }
-    
-    
-}
 @media (max-width: 770px) {
   .albuns {
     justify-content: center;
     gap: 3rem;
     margin: 5rem auto;
-  }
-}
-@media (min-width: 300px) {
-  .albuns {
-    justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
+    border: none;
   }
 }
