@@ -12,6 +12,7 @@ export function LoginPage() {
         <header className="hero-container"></header>
 
         <main>
+          
           <section id="showcase">
             <div className="showcase-container">
               <h2>Aproveite para ouvir suas músicas</h2>

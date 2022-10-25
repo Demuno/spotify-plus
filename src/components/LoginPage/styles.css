@@ -1,6 +1,4 @@
-body{
-  overflow: hidden;
-}
+
 .login-wrapper {
   display: flex;
 }
@@ -13,6 +11,9 @@ body{
   background-position: -35px -44px;
   background-size: 100% 710px;
   margin-right: 3rem;
+  
+  
+    
   
 
   padding: 0;
@@ -27,10 +28,12 @@ main {
   height: 90vh;
   display: flex;
   align-items: center;
+  
 }
 
 .showcase-container {
   width: 100%;
+  
 }
 
 /* Utility Classes */
@@ -43,6 +46,8 @@ main {
   letter-spacing: 1px;
   font-weight: bold;
   transition: all 300ms ease;
+  
+  
 }
 
 .btn-primary:hover {
@@ -58,6 +63,9 @@ Showcase
   align-items: center;
   background: url("../../assets/showcase.webp") center center/cover;
   background-blend-mode: color;
+  
+  
+
 }
 
 .showcase-container {
@@ -77,3 +85,6 @@ Showcase
   color: black;
   text-align: right;
 }
+
+
+
