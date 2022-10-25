@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { LoadingSpinner } from "../LoadingSpinner";
 
+
 type Song = {
   id: string;
   name: string;
@@ -38,7 +39,7 @@ type Playlist = {
   name: string;
   images: Image[];
 };
-
+  
 export function HomePage() {
   const [featuredPlaylists, setFeaturedPlaylists] = useState<Playlist[]>([]);
   const [recommendedSongs, setRecommendedSongs] = useState<Song[]>();
@@ -117,7 +118,7 @@ export function HomePage() {
                 Inicio</Link>
             </li>   
             <li className="menu">
-              <a href="#">Buscar</a>
+              <a href="#browser">Buscar</a>
             </li>
             <li className="menu">
               <a href="#">Sua biblioteca</a>
@@ -130,6 +131,8 @@ export function HomePage() {
             <li className="second-menu">
               <a href="#">Músicas mais curtidas</a>
             </li>
+            <li className="second-menu">
+            </li>
           </ul>
         </nav>
       </header>
@@ -137,7 +140,7 @@ export function HomePage() {
         <section>
           <h1 className="title">Spotify playlist</h1>
           <div className="albuns">
-            {featuredPlaylists.slice(0, 5).map((e: Playlist) => (
+            {featuredPlaylists.slice(0, 4).map((e: Playlist) => (
               <a key={e.id} href="#" className="href-size">
                 <div className="album">
                   <img className="img-album" src={e.images[0].url} alt="" />
