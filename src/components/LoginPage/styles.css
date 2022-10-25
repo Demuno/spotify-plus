@@ -4,13 +4,14 @@
 }
 
 .hero-container {
-  width: 800px;
+  width: 700px;
   height: 600px;
-  background-image: url("../../assets/Playlist-rafiki.svg");
+  background-image: url("../../assets/more-music-animate\ \(1\).svg");
   background-repeat: no-repeat;
   background-position: -35px -44px;
   background-size: 100% 710px;
-  overflow: hidden;
+  margin-right: 3rem;
+  
 
   padding: 0;
   /* border: 1px solid red; */
