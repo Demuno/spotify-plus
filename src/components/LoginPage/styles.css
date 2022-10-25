@@ -1,6 +1,4 @@
-body{
-  overflow: hidden;
-}
+
 .login-wrapper {
   display: flex;
 }
@@ -76,4 +74,19 @@ Showcase
 .btn-primary {
   color: black;
   text-align: right;
+}
+
+@media (max-width: 990px) {
+  .login-wrapper {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 770px) {
+  .login-wrapper {
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+  }
 }

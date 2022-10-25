@@ -1,6 +1,6 @@
 .containerMusic {
   position: relative;
-  width: 25%;
+  width: 30%;
 }
 
 .imageAlbum {
@@ -28,4 +28,19 @@
 
 .player {
   border-radius: 10px;
+}
+@media (max-width:1080px) {
+  .containerMusic {
+    width: 30%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 770px) {
+  .containerMusic {
+    width: 55%;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+  }
 }

@@ -24,3 +24,17 @@
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 }
+/* @media (max-width: 990px) {
+  .containerMusic {
+    width: 95%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 770px) {
+  .containerMusic {
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+  }
+} */
