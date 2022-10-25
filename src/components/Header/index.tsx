@@ -1,8 +1,7 @@
 import logoImg from '../../assets/logoS.png';
-
 import './styles.css';
 
-export function Header() {
+export function Header(): JSX.Element {
   return (
     <header>
 			<fieldset>
@@ -11,4 +10,4 @@ export function Header() {
 			</fieldset>
 		</header>
   )
-}
+}	 
