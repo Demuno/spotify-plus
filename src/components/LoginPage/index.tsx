@@ -12,6 +12,7 @@ export function LoginPage() {
         <header className="hero-container"></header>
 
         <main>
+          
           <section id="showcase">
             <div className="showcase-container">
               <h2>Aproveite para ouvir suas músicas</h2>
@@ -24,8 +25,9 @@ export function LoginPage() {
                 {" "}
                 Aproveite 1 mês grátis
               </Marquee>
+              
 
-              <Link to="/home">
+              <Link className="button-index" to="/home">
                 <button className="btn-primary">Ouvir agora</button>
               </Link>
             </div>

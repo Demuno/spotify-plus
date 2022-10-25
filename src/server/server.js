@@ -47,7 +47,7 @@ app.get("/recommendations", (req, res) => {
     .getRecommendations({
       limit: 100,
       min_energy: 0.9,
-      seed_artists: ["6mfK6Q2tzLMEchAr0e9Uzu", "4DYFVNKZ1uixa6SQTvzQwJ"],
+      seed_artists: ["2cAooeeHKk2UvzUgIxpS0y", "1elUiq4X7pxej6FRlrEzjM"],
       min_popularity: 50,
     })
     .then(
